@@ -267,6 +267,5 @@ $
 
 Authors ✒️
 
-    Abdulazeez Buhari <stylebyabdul>
     Kazeem Mubarak  <MubarakXBT>
 
