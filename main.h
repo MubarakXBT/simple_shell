@@ -2,5 +2,6 @@
 #define _MAIN_H_
 
 void prompt(void);
-int getlyne();
+char* getlyne();
+int parser(char* buffer);
 #endif
