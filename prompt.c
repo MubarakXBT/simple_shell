@@ -24,7 +24,6 @@ char* getlyne()
 		exit(1);
 	}
 	ch = getline(&buffer, &bufsize,stdin);
-	free(buffer);
 	return (buffer);
 }
 
