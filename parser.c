@@ -4,6 +4,6 @@
  */
 int parser(char* buffer)
 {
-	printf("Here: '%s'\n", buffer);
+	printf("Here: %s\n", buffer);
 	return (0);
 }
