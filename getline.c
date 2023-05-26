@@ -3,7 +3,8 @@
 #include "main.h"
 /**
  */
-int getlyne()
+
+char* getlyne()
 {
 	char *buffer;
 	size_t bufsize = 32;
@@ -16,6 +17,5 @@ int getlyne()
 		exit(1);
 	}
 	ch = getline(&buffer, &bufsize,stdin);
-	free(buffer);
-	return (0);
+	return (buffer);
 }

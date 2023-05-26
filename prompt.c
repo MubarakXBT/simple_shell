@@ -6,11 +6,10 @@ void prompt(void)
 {
 	printf("$ ");
 }
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-/**
- *  */
+**
 char* getlyne()
 {
 	char *buffer;
@@ -26,7 +25,7 @@ char* getlyne()
 	ch = getline(&buffer, &bufsize,stdin);
 	return (buffer);
 }
-
+*/
 #include <stdbool.h>
 #include <stdlib.h>
 /**
