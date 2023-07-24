@@ -3,5 +3,6 @@
 
 void prompt(void);
 char* getlyne();
-int parser(char* buffer);
+char* parser(char* buffer);
+int exec(char *argv[]);
 #endif
