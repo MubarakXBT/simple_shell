@@ -7,15 +7,16 @@
 char* parser(char* buffer)
 {
 	char* found;
-	char *argv[3];
-	int i = 0;
+	char *argv[4];
+	int i = 1;
 
 	printf("Here: %s\n", buffer);
 	found = strtok(buffer, " ");
 	while (found)
 	{
-		argv[i++] = found;
+		argv[i] = found;
 		found = strtok(NULL," ");
+		i++;
 	}
 
 	return (*argv);
