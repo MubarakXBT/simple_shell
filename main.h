@@ -4,5 +4,6 @@
 void prompt(void);
 char* getlyne();
 char* parser(char* buffer);
-int exec(char *argv[]);
+char** arg_token(char* token);
+void exec(char* token, char** argv, char* envp[]);
 #endif
