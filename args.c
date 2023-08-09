@@ -15,8 +15,8 @@ char **arg_token(char *token)
 
 	while (token != NULL && i < 4)
 	{
-		token = strtok(NULL, " ");
 		arg[i] = token;
+		token = strtok(NULL, " ");
 		i++;
 
 	}

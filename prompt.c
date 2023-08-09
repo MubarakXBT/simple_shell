@@ -40,16 +40,10 @@ int main(void)
 
 		arg = arg_token(token);
 
-		printf("we outside\n");
-		printf("Token: %s\n", token);
-		printf("arg: %s\n", arg[0]);
-		printf("arg: %s\n", arg[1]);
-		printf("arg: %s\n", arg[2]);
-
-		exec(token, arg, NULL);
-		printf("\n");
+		exec(arg[0], arg, NULL);
 
 		free(arg);
+		continue;
 	}
 	return (0);
 }
