@@ -11,7 +11,6 @@ char *getlyne(void)
 {
 	char *buffer;
 	size_t bufsize = 32;
-	ssize_t ch;
 
 	buffer = (char *)malloc(bufsize * sizeof(char));
 	if (buffer == NULL)
@@ -19,6 +18,6 @@ char *getlyne(void)
 		perror("Unable to allocate");
 		exit(1);
 	}
-	ch = getline(&buffer, &bufsize, stdin);
+	getline(&buffer, &bufsize, stdin);
 	return (buffer);
 }
