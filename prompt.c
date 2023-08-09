@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
+ * prompt - a function to display the shell prompt
+ *
+ * Return: void
  */
 void prompt(void)
 {
@@ -12,12 +15,15 @@ void prompt(void)
 #include <string.h>
 #include "main.h"
 /**
+ * main - the main function of my shell
+ *
+ * Return: 0 on exit
  */
 int main(void)
 {
-	char** arg;
-	char* buffer;
-	char* token;
+	char **arg;
+	char *buffer;
+	char *token;
 
 
 

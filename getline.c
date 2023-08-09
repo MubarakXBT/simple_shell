@@ -2,9 +2,12 @@
 #include <stdlib.h>
 #include "main.h"
 /**
+ * getlyne - a function that accept input from user
+ *
+ * Return: buffer(memory) to the inputs
  */
 
-char* getlyne()
+char *getlyne(void)
 {
 	char *buffer;
 	size_t bufsize = 32;
@@ -16,6 +19,6 @@ char* getlyne()
 		perror("Unable to allocate");
 		exit(1);
 	}
-	ch = getline(&buffer, &bufsize,stdin);
+	ch = getline(&buffer, &bufsize, stdin);
 	return (buffer);
 }

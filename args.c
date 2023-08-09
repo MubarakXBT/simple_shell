@@ -3,12 +3,15 @@
 #include <stdlib.h>
 #include "main.h"
 /**
+ * arg_token - A function to get the arguments of a command
+ * @token: a recieved tokens of command from the user
  *
+ * Return: array of arguments
  */
-char** arg_token(char* token)
+char **arg_token(char *token)
 {
 	int i = 0;
-	char** arg = malloc(sizeof(token) * 4);
+	char **arg = malloc(sizeof(token) * 4);
 
 	while (token != NULL && i < 4)
 	{
@@ -19,6 +22,5 @@ char** arg_token(char* token)
 	}
 	arg[i] = NULL;
 
-	/*g = strdup(token);*/
 	return (arg);
 }

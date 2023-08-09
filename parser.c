@@ -3,10 +3,14 @@
 #include <string.h>
 #include <unistd.h>
 /**
+ * parser - a function to convert user input to tokens
+ * @buffer: string of inputs
+ *
+ * Return: pointer to tokens
  */
-char* parser(char* buffer)
+char *parser(char *buffer)
 {
-	char* found;
+	char *found;
 
 	found = strtok(buffer, " ");
 
